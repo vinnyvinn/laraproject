@@ -3,7 +3,7 @@
 @section('content')
 
     <div>
-      <sale></sale>
+      <uza></uza>
     </div>
 
 @endsection

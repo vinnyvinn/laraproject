@@ -174,7 +174,7 @@
         },
         watch: {},
         computed: {
-            balance() {
+                balance() {
                 let discount = parseFloat(this.discount);
                 discount = isNaN(discount) ? 0 : discount;
                 let total = parseFloat(this.total_inclusive) - discount;
@@ -207,7 +207,7 @@
                 return balance < 0 ? 0 : balance;
             },
             validateCompletion() {
-                let m_pesa_total = this.rows.map(row => {
+                 let m_pesa_total = this.rows.map(row => {
                     return row.m_pesa_amount;
                 }).reduce((a, b) => {
                     return parseFloat(a) + parseFloat(b);
@@ -228,7 +228,7 @@
 
         methods: {
             paymentType(e) {
-                console.log("testing...");
+                console.log("testing ...");
                 return;
                 if (!e.target.id) {
                     console.log(this.payment_types[1]);
@@ -252,7 +252,8 @@
                 }
                 this.$emit('paymentType', this.cash_amount, this.rows, this.credit_amount, this.balance, this.notes, this.creditRows);
             },
-            back() {
+
+             back() {
                 this.$emit('toggleCheckout');
             },
 
@@ -273,7 +274,6 @@
             removeCreditField(creditRow) {
                 return this.creditRows.splice(creditRow, 1)
             }
-
         },
         props: {
             total_inclusive: {

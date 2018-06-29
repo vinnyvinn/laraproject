@@ -25,6 +25,7 @@
     "print.js": "^1.0.18",
     "select2": "^4.0.6-rc.0",
     "vue-multiselect": "^2.0.6",
+    "vue-router": "^3.0.1",
     "vue-select": "^2.3.0",
     "vuefire": "^1.4.4"
   }
